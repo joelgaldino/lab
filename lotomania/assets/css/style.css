@@ -1,4 +1,23 @@
 body {
-  background-color: red; }
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: min-content auto min-content;
+  background-color: #ece5f0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+
+main {
+  padding: 8px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 8px; }
+  main button {
+    background-color: #c3bdc6;
+    color: #5b575d;
+    border: none;
+    padding: 8px; }
+  main button:hover {
+    background-color: #5b575d;
+    color: #f4f0f6; }
 
 /*# sourceMappingURL=style.css.map */

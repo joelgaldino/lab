@@ -1,3 +1,49 @@
+// https://coolors.co/012622-003b36-ece5f0-e98a15-59114d
+$evergreen: rgb(1, 38, 34);
+$evergreen-2: rgb(0, 59, 54);
+$lavender-mist: rgb(236, 229, 240);
+$amber-earth: rgb(233, 138, 21);
+$deep-purple: rgb(89, 17, 77);
+
+$cor1: $evergreen;
+$cor2: $evergreen-2;
+$cor3: $lavender-mist;
+$cor4: $amber-earth;
+$cor5: $deep-purple;
+
+$branco: rgb(244, 240, 246);
+//$cinza: rgb(177, 172, 180);
+$cinza_claro: rgb(195, 189, 198);
+$cinza_escuro: rgb(91, 87, 93);
+
 body {
-    background-color: red;
+    margin: 0;
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+
+    background-color: $cor3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+main {
+    padding: 8px;
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 8px;
+
+    button {
+        background-color: $cinza_claro;
+        color: $cinza_escuro;
+        border: none;
+        padding: 8px;
+    }
+
+    button:hover {
+        background-color: $cinza_escuro;
+        color: $branco;
+    }
+
 }
